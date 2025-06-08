@@ -59,7 +59,7 @@
   </div>
 
   <!-- Theme Selection Section -->
-  <Card class="max-w-4xl mx-auto mb-8">
+  <Card class="max-w-4xl mx-auto mb-8 p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm">
     <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Color Themes</h2>
     <p class="text-gray-600 dark:text-gray-400 mb-6">
       Flowbite Svelte supports multiple color schemes out of the box
@@ -85,7 +85,7 @@
   <div class="grid gap-8 lg:grid-cols-2 mb-8">
     
     <!-- Left Column: Interactive Components -->
-    <Card class="max-w-none">
+    <Card class="p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm">
       <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Interactive Elements</h3>
       <p class="text-gray-600 dark:text-gray-400 mb-6">
         Components using the current theme with proper hover effects
@@ -136,7 +136,7 @@
     </Card>
 
     <!-- Right Column: Status System -->
-    <Card class="max-w-none">
+    <Card class="p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm">
       <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Status System</h3>
       <p class="text-gray-600 dark:text-gray-400 mb-6">
         Semantic colors for different states and feedback
@@ -180,7 +180,7 @@
   </div>
 
   <!-- Typography Showcase Section -->
-  <Card class="max-w-4xl mx-auto">
+  <Card class="max-w-4xl mx-auto p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm">
     <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Typography & Hierarchy</h3>
     <p class="text-gray-600 dark:text-gray-400 mb-6">
       Text styles that work well in both light and dark modes

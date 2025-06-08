@@ -39,9 +39,9 @@
     </div>
   </div>
 
-  <!-- Feature Grid -->
+  <!-- Feature Grid with properly styled Cards -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-    <Card class="max-w-none">
+    <Card class="p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow">
       <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">⚡ Fast Development</h3>
       <p class="text-gray-600 dark:text-gray-300 mb-4">
         Hot module replacement and instant feedback with Vite's lightning-fast development server.
@@ -49,7 +49,7 @@
       <Badge color="blue">Performance</Badge>
     </Card>
 
-    <Card class="max-w-none">
+    <Card class="p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow">
       <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">🎨 Modern Styling</h3>
       <p class="text-gray-600 dark:text-gray-300 mb-4">
         Tailwind CSS v4 with improved performance, better developer experience, and new features.
@@ -57,7 +57,7 @@
       <Badge color="purple">Design</Badge>
     </Card>
 
-    <Card class="max-w-none">
+    <Card class="p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow">
       <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">🧩 Rich Components</h3>
       <p class="text-gray-600 dark:text-gray-300 mb-4">
         Flowbite Svelte provides 45+ components with excellent theming and accessibility.
@@ -66,56 +66,54 @@
     </Card>
   </div>
 
-  <!-- Interactive Demo -->
-  <Card class="max-w-2xl mx-auto mb-12">
-    <div class="p-6">
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Contact Form Demo</h2>
-      <p class="text-gray-600 dark:text-gray-300 mb-6">
-        Demonstrating Flowbite Svelte form components with proper theming
-      </p>
+  <!-- Interactive Demo with proper Card styling -->
+  <Card class="max-w-2xl mx-auto mb-12 p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm">
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Contact Form Demo</h2>
+    <p class="text-gray-600 dark:text-gray-300 mb-6">
+      Demonstrating Flowbite Svelte form components with proper theming
+    </p>
 
-      <form class="space-y-4">
-        <div>
-          <Label for="name" class="mb-2">Full Name</Label>
-          <Input 
-            id="name" 
-            bind:value={formData.name}
-            placeholder="Enter your full name"
-            required
-          />
-        </div>
+    <form class="space-y-4">
+      <div>
+        <Label for="name" class="mb-2">Full Name</Label>
+        <Input 
+          id="name" 
+          bind:value={formData.name}
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
 
-        <div>
-          <Label for="email" class="mb-2">Email Address</Label>
-          <Input 
-            id="email" 
-            type="email"
-            bind:value={formData.email}
-            placeholder="your.email@example.com"
-            required
-          />
-        </div>
+      <div>
+        <Label for="email" class="mb-2">Email Address</Label>
+        <Input 
+          id="email" 
+          type="email"
+          bind:value={formData.email}
+          placeholder="your.email@example.com"
+          required
+        />
+      </div>
 
-        <div>
-          <Label for="message" class="mb-2">Message</Label>
-          <Textarea 
-            id="message" 
-            bind:value={formData.message}
-            placeholder="Tell us about your project..."
-            rows="4"
-          />
-        </div>
+      <div>
+        <Label for="message" class="mb-2">Message</Label>
+        <Textarea 
+          id="message" 
+          bind:value={formData.message}
+          placeholder="Tell us about your project..."
+          rows="4"
+        />
+      </div>
 
-        <div class="flex gap-3 pt-4">
-          <Button type="submit" class="flex-1">
-            Send Message
-          </Button>
-          <Button color="alternative" type="button">
-            Save Draft
-          </Button>
-        </div>
-      </form>
-    </div>
+      <div class="flex gap-3 pt-4">
+        <Button type="submit" class="flex-1">
+          Send Message
+        </Button>
+        <Button color="alternative" type="button">
+          Save Draft
+        </Button>
+      </div>
+    </form>
   </Card>
 
   <!-- Technology Stack Info -->
